@@ -15,14 +15,13 @@ const MainProject = () => {
   const subdomains = [
     { name: 'simskul.id', url: 'https://simskul.id' },
     { name: 'kuis.simskul.id', url: 'https://kuis.simskul.id' },
-    { name: 'flipbook.simskul.id', url: 'https://flipbook.simskul.id' },
-    { name: 'api.simskul.id', url: 'https://api.simskul.id' },
+    { name: 'flipbook.simskul.id', url: 'https://flipbook.simskul.id' }
   ];
 
   return (
     <Section id="simskul" subtitle="Flagship Project" title="SIMSKUL — Sistem Informasi Manajemen Sekolah">
       <div className="grid lg:grid-cols-12 gap-12 mt-12 bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl border border-slate-800 p-8 lg:p-16">
-        
+
         {/* Left Column: Tech & Description */}
         <div className="lg:col-span-5 flex flex-col justify-center">
           <p className="text-blue-400 font-bold tracking-widest text-sm uppercase mb-6 flex items-center gap-2">
@@ -33,7 +32,7 @@ const MainProject = () => {
             Complete digital<br />transformation for schools.
           </h3>
           <p className="text-slate-400 text-lg leading-relaxed mb-10">
-            Sistem Informasi Manajemen Sekolah yang digunakan secara aktif oleh guru dan siswa. 
+            Sistem Informasi Manajemen Sekolah yang digunakan secara aktif oleh guru dan siswa.
             Built on a high-availability infrastructure with specialized services for attendance, learning, and administration.
           </p>
 
@@ -47,8 +46,8 @@ const MainProject = () => {
 
           <div className="flex flex-col gap-3">
             {subdomains.map((sub) => (
-              <a key={sub.name} href={sub.url} target="_blank" rel="noopener noreferrer" 
-                 className="group inline-flex items-center justify-between p-4 bg-slate-800/50 hover:bg-blue-600 border border-slate-800 hover:border-blue-500 rounded-2xl transition-all duration-300">
+              <a key={sub.name} href={sub.url} target="_blank" rel="noopener noreferrer"
+                className="group inline-flex items-center justify-between p-4 bg-slate-800/50 hover:bg-blue-600 border border-slate-800 hover:border-blue-500 rounded-2xl transition-all duration-300">
                 <span className="text-white font-bold tracking-wide">{sub.name}</span>
                 <svg className="w-5 h-5 text-slate-500 group-hover:text-white group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
@@ -68,12 +67,12 @@ const MainProject = () => {
                 <p className="text-slate-400 text-sm leading-relaxed">{f.desc}</p>
               </div>
             ))}
-            
+
             {/* Visual Callout */}
             <div className="sm:col-span-2 p-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl flex items-center justify-between text-white overflow-hidden relative group">
               <div className="relative z-10">
-                 <h4 className="text-3xl font-black italic tracking-tighter mb-2">LIVE IN PRODUCTION</h4>
-                 <p className="text-blue-100 font-medium">Handling daily student attendance and staff payroll.</p>
+                <h4 className="text-3xl font-black italic tracking-tighter mb-2">LIVE IN PRODUCTION</h4>
+                <p className="text-blue-100 font-medium">Handling daily student attendance and staff payroll.</p>
               </div>
               <div className="absolute right-[-20px] top-[-20px] text-white/10 text-[10rem] font-black select-none pointer-events-none group-hover:scale-110 transition-transform duration-1000 rotate-12">
                 SIM
